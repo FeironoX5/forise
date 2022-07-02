@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    appearance: none;
+    -webkit-user-drag: none;
+    font-family: 'Roboto Mono', sans-serif;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro {
+    background: #000;
+    height: 93vh;
+    color: #fff;
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: calc(5vh + 45px);
+    padding: 0 30px;
+}
+
+.socnet {
+    display: inline-block;
+    float: right;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#logo {
+    display: inline-block;
+    height: calc((5vh + 45px) - 18px * 2);
+    margin-top: 18px;
+}
+
+#bg {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro h1 {
+    text-align: center;
+    top: 23vh;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    font-size: calc(5.5vw + 15px);
+    line-height: calc(5.5vw + 15px);
+}
+
+#description {
+    text-align: center;
+    top: calc(23vh + 5vw + 8px + 30px);
+    position: absolute;
+    width: calc(100vw - 25vw * 2);
+    left: 25vw;
+    right: 25vw;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.35)
+}
+
+
+.txt {
+    width: calc(100vw - (25px + 4vw) * 2);
+    padding: 60px calc(25px + 4vw) 70px;
+}
+
+.txt h1, .txt span {
+    width: 80%;
+}
+
+.gr {
+    margin: 30px 0 20px;
+    display: inline-block;
+    width: 40%;
+}
+
+.txt h1 {
+    font-size: calc(4vw + 14px);
+    line-height: 115%;
+    font-weight: 600;
+
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.txt span {
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 35px;
+    display: block;
+    font-size: calc(1vw + 10px);
+}
+
+.txt b {
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    font-size: calc(1vw + 10px);
+}
+
+
+.quote {
+    background: #000;
+    color: #fff;
+    width: calc(100vw - (10px + 4vw) * 2);
+    padding: 50px calc(10px + 4vw) 40px;
+}
+
+.quote h3 {
+    font-size: calc(4.5vw - 2px);
+    line-height: 110%;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.quote span {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 20px;
+    display: block;
+    font-size: calc(1vw + 5px);
+    line-height: 150%;
+    text-align: right;
+    width: 60%;
+    font-weight: 400;
+    float: right;
+}
+
+
+@media (max-width: 960px) {
+    #bg {
+        display: none;
+    }
+
+    .txt h1, .txt span {
+        width: 100%;
+    }
+
+    .gr {
+        margin: 20px 0;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #description {
+        top: calc(23vh + 5vw + 8px + 40px);
+        width: calc(100vw - 13vw * 2);
+        left: 13vw;
+        right: 13vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #description {
+        top: calc(23vh + 5vw + 8px + 30px);
+        width: calc(100vw - 6vw * 2);
+        left: 6vw;
+        right: 6vw;
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #description {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .txt {
+        width: calc(100vw - 30px * 2);
+        padding: 40px 30px 60px;
+    }
+}
+
+.point {
+    margin-top: 50px;
+    font-size: calc(2vw + 15px) !important;
+    line-height: calc(2vw + 15px) !important;
+    width: 100%!important;
+}
